@@ -88,7 +88,7 @@ header {
 	color: var(--light);
 	height: 75px;
 }
-nav ul {
+nav menu {
 	display: flex;
 	gap: 25px;
 }
@@ -157,7 +157,7 @@ nav ul {
 	max-width: 175px;
 	gap: 10px;
 }
-.info-item > p {
+.info-item > figcaption {
 	text-align: center;
 }
 .info-img {
@@ -172,8 +172,10 @@ nav ul {
 }
 .quote .wrapper {
 	justify-content: center;
+	flex-direction: column;
+	max-width: 65%;	
 }
-.quote-items {
+.quote-item {
 	display: flex;
 	flex-direction: column;
 	max-width: 90%;
@@ -183,21 +185,21 @@ nav ul {
 	color: var(--dark);
 	font-style: italic;
 }
-.quote-items figcaption {
+.quote cite {
 	font-size: var(--font-m);
 	align-self: flex-end;
 	font-weight: bold;
 }
 
 /* call to action section */
-.call-to-action {
+.cta {
 	width: 100%;
 	background-color: var(--blue);
 	color: white;
 	padding: 4% 8%;
 	border-radius: 10px;
 }
-.call-to-action button {
+.cta button {
 	border: 2px solid var(--light);
 	padding: 5px 10px;
 }
